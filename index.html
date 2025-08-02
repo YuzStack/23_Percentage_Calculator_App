@@ -4,10 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Percentage Calculator App</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    
+    <main class="overall-container">
+      <div class="main-container">
+        <div class="content-container">
+          <h1><span class="percentage">Percentage</span> Calculator</h1>
+          <div class="text-container">
+            The Percentage of <input type="number" name="" id="part" /> in
+            <input type="number" name="" id="whole" />
+          </div>
+          <div class="btn-container">
+            <div>
+              <button id="calc-btn">Calculate</button>
+              <button class="clear-btn" id="clear-btn">Clear</button>
+            </div>
+          </div>
+          <div id="results" class="results"></div>
+
+          <div class="sec-text-container">
+            What is the <input type="number" name="" id="percent" />% of
+            <input type="number" name="" id="value" />
+          </div>
+          <div class="btn-container">
+            <button id="sec-calc-btn">Calculate</button>
+            <button id="sec-reset-btn" class="clear-btn">Clear</button>
+          </div>
+          <div id="sec-results"></div>
+        </div>
+      </div>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>

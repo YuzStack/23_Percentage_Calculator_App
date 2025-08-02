@@ -4,3 +4,91 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+:root {
+  --blue: rgb(96, 66, 215);
+  --black: #111828;
+}
+
+.overall-container {
+  background-image: linear-gradient(
+    to bottom right,
+    #111828,
+    rgb(188, 163, 163)
+  );
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  background-color: white;
+  width: 95%;
+  max-width: 600px;
+  /* height: 50vh; */
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+.main-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.percentage {
+  color: var(--blue);
+}
+
+.text-container {
+  font-size: 18px;
+}
+
+.text-container input {
+  padding: 5px;
+  /* width: 100px; */
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.content-container button {
+  padding: 10px;
+  color: white;
+  background-color: var(--blue);
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 15px;
+}
+
+.clear-btn {
+  background-color: #1a1a1a !important;
+}
+
+.results p {
+  /* text-align: center; */
+  margin-top: 20px;
+}
+
+.sec-text-container {
+  margin-top: 100px;
+}
+
+.sec-text-container input {
+  padding: 5px;
+}
+
+.sec-results p {
+  margin-top: 20px;
+}
+
+@media (max-width: 575px) {
+  input {
+    margin-top: 10px;
+  }
+}
