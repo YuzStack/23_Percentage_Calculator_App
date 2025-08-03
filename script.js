@@ -17,6 +17,8 @@ calcBtn.addEventListener("click", () => {
     resultDiv.append(para);
 
     calcBtn.disabled = true;
+
+    para.classList.add("fade-in");
   }
 });
 
@@ -47,6 +49,8 @@ secCalcBtn.addEventListener("click", () => {
     secResultDiv.append(para);
 
     secCalcBtn.disabled = true;
+
+    para.classList.add("fade-in");
   }
 });
 

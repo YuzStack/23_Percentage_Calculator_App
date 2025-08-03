@@ -26,9 +26,9 @@
   background-color: white;
   width: 95%;
   max-width: 600px;
-  /* height: 50vh; */
   border-radius: 8px;
   padding: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
 .main-container h1 {
@@ -55,6 +55,15 @@
   margin-top: 20px;
 }
 
+button {
+  transition: 0.2s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
 .content-container button {
   padding: 10px;
   color: white;
@@ -68,15 +77,22 @@
 
 .clear-btn {
   background-color: #1a1a1a !important;
+  background-color: rgb(225, 67, 67) !important;
 }
 
 .results p {
   /* text-align: center; */
   margin-top: 20px;
+  font-weight: bold;
+  color: var(--blue);
+}
+
+hr {
+  margin: 50px 0;
 }
 
 .sec-text-container {
-  margin-top: 100px;
+  /* margin-top: 20px; */
 }
 
 .sec-text-container input {
@@ -85,10 +101,26 @@
 
 .sec-results p {
   margin-top: 20px;
+  font-weight: bold;
+  color: var(--blue);
 }
 
 @media (max-width: 575px) {
   input {
     margin-top: 10px;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.2s ease-in;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
